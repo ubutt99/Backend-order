@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps: 
+- script: |
+    echo "Hello, This is my first pipeline on azure"
+    echo "I'm learning about the pipelines"
+    whoami
+    pwd
+    echo "My application is minishop"
+    echo "this is triggered by github push"
+  displayName: "My first linux pipeline"
+#
