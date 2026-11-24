@@ -18,4 +18,5 @@ steps:
     echo "My application is minishop"
     echo "this is triggered by github push"
   displayName: "My first linux pipeline"
-#
+##
+##end
